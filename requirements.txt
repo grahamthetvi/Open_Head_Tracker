@@ -1,0 +1,83 @@
+# =============================================================================
+# SwitchPath2Go - Head Tracker with Automatic Eye Gaze Calibration
+# Python Dependencies
+# =============================================================================
+# Install all dependencies with: pip install -r requirements.txt
+#
+# Tested on: Python 3.8+
+# Platform: Windows, macOS, Linux
+# =============================================================================
+
+# Core Computer Vision
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# MediaPipe Face Mesh & Iris Tracking (TensorFlow Lite backend)
+mediapipe>=0.10.0
+
+# Mathematical Operations
+scipy>=1.10.0
+
+# Mouse and Keyboard Control
+pyautogui>=0.9.53
+keyboard>=0.13.5
+
+# Optional: Advanced Kalman Filtering (improves hybrid eye tracking)
+# The system will use a simpler filter if this is not available
+filterpy>=1.4.5
+
+# =============================================================================
+# Optional Dependencies (for alternative tracking methods)
+# =============================================================================
+# Uncomment the following if you want to use the GazeTracking alternative:
+# dlib>=19.24.0
+
+# =============================================================================
+# Built-in Libraries (No installation needed)
+# =============================================================================
+# The following are included with Python and don't need to be installed:
+# - json
+# - time
+# - math
+# - datetime
+# - pathlib
+# - socket
+# - threading
+# - collections
+# - os
+
+# =============================================================================
+# Installation Notes
+# =============================================================================
+# 
+# Standard Installation:
+#   pip install -r requirements.txt
+#
+# If you encounter issues with opencv-python:
+#   Try the headless version: pip install opencv-python-headless>=4.8.0
+#
+# If you have GPU and want GPU acceleration for MediaPipe:
+#   The TensorFlow Lite models in MediaPipe automatically use GPU when available
+#   No additional installation needed!
+#
+# For Windows users:
+#   Some packages may require Microsoft Visual C++ 14.0 or greater
+#   Download from: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+#
+# For macOS users:
+#   You may need to install Xcode Command Line Tools:
+#   xcode-select --install
+#
+# For Linux users:
+#   You may need to install additional system dependencies:
+#   sudo apt-get install python3-dev python3-pip
+#   sudo apt-get install libopencv-dev python3-opencv
+#
+# =============================================================================
+# Version Information
+# =============================================================================
+# This requirements.txt was generated for SwitchPath2Go v2.0
+# Features: Automatic gaze calibration, MediaPipe Face Mesh, Iris tracking
+# Algorithm: NO machine learning training required (uses pre-built models)
+# =============================================================================
+
